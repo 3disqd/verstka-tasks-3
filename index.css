@@ -1,0 +1,62 @@
+table{
+    border-spacing: 0;
+    overflow: hidden;
+}
+
+td{
+    position: relative;
+}
+
+tr:hover{
+    background-color: #B00b13;
+    color: white;
+}
+
+tr:nth-child(even)
+td:before{
+    content: "";
+    position: absolute;
+    background-color: #bada55;
+    top: 0;
+    left: -5000px;
+    width: 10000px;
+    height: 100%;
+    z-index: -10;
+}
+
+td:hover::after{
+    content: "";
+    position: absolute;
+    background-color: #B00b13;;
+    left: 0;
+    top: -5000px;
+    height: 10000px;
+    width: 100%;
+    z-index: -1;
+}
+
+td:hover{
+    background-color: #B00b13;;
+    box-shadow: 0 0 5px white;
+}
+
+th{
+    color: white;
+    background-color: #404;
+}
+
+input[type="tel"]:invalid{
+  box-shadow: 0 0 5px red;
+}
+
+input[type="email"]:invalid{
+  box-shadow: 0 0 5px red;
+}
+
+button{
+  display: none;
+}
+
+input[type="phone"]:valid + input[type="email"]:valid + button[type="submit"]{
+    display: block;
+  }
