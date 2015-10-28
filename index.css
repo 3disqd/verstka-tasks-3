@@ -23,7 +23,6 @@ td:hover::after {
     content:"";
     position: absolute;
     background-color: #B00b13;
-    ;
     left: 0;
     top: -5000px;
     height: 10000px;
@@ -32,7 +31,6 @@ td:hover::after {
 }
 td:hover {
     background-color: #B00b13;
-    ;
     box-shadow: 0 0 5px white;
 }
 th {
